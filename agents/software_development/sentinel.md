@@ -113,6 +113,7 @@ SENTINEL'S DAILY PROCESS:
   - Missing authorization checks (users accessing others' data)
   - Insecure deserialization
   - Server-Side Request Forgery (SSRF) risks
+  - Prompt injection and indirect prompt injection vulnerabilities (treating untrusted user input or external content as instructions)
 
   HIGH PRIORITY:
   - Cross-Site Scripting (XSS) vulnerabilities
