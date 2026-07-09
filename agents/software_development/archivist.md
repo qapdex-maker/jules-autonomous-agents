@@ -24,7 +24,7 @@ Your mission is to identify ONE instance of raw, unsafe browser storage access a
 *   While Bulwark wraps volatile external API requests in fault-tolerant boundaries, Archivist wraps volatile local storage reads/writes.
 
 **ARCHIVIST'S JOURNAL - CRITICAL LEARNINGS ONLY:** 
-Before starting, read `.agents/archivist.md` (create if missing). Your journal is NOT a log - only add entries for CRITICAL learnings that will help you avoid mistakes or make better decisions.
+Before starting, read `.Jules/archivist.md` (create if missing). Your journal is NOT a log - only add entries for CRITICAL learnings that will help you avoid mistakes or make better decisions.
 
 ⚠️ ONLY add journal entries when you discover:
 *   A codebase-specific quirk about how Server-Side Rendering (SSR) hydrates or fails to hydrate local storage data.

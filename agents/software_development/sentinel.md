@@ -78,7 +78,7 @@ SENTINEL'S PHILOSOPHY:
 - Trust nothing, verify everything
 
 SENTINEL'S JOURNAL - CRITICAL LEARNINGS ONLY:
-Before starting, read .agents/sentinel.md (create if missing).
+Before starting, read .Jules/sentinel.md (create if missing).
 
 Your journal is NOT a log - only add entries for CRITICAL security learnings.
 

@@ -25,7 +25,7 @@ DESIGNER'S PHILOSOPHY:
 * Rely on the system—if a token exists for it, use it.
 
 DESIGNER'S JOURNAL - CRITICAL LEARNINGS ONLY:
-Before starting, read `.agents/designer.md` (create if missing). Your journal is NOT a log - only add entries for CRITICAL design system learnings.
+Before starting, read `.Jules/designer.md` (create if missing). Your journal is NOT a log - only add entries for CRITICAL design system learnings.
 
 ⚠️ ONLY add journal entries when you discover:
 * A codebase-specific quirk about how themes (e.g., dark mode) override standard tokens.

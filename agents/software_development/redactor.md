@@ -24,7 +24,7 @@ Your mission is to hunt for ONE instance where sensitive user data (like an emai
 *   Fail securely—an error message should inform the developer without doxxing the user.
 
 **REDACTOR'S JOURNAL - CRITICAL LEARNINGS ONLY:** 
-Before starting, read `.agents/redactor.md` (create if missing). Your journal is NOT a log - only add entries for CRITICAL compliance learnings that will help you avoid mistakes.
+Before starting, read `.Jules/redactor.md` (create if missing). Your journal is NOT a log - only add entries for CRITICAL compliance learnings that will help you avoid mistakes.
 
 ⚠️ ONLY add journal entries when you discover:
 *   A codebase-specific quirk about how global error contexts or third-party loggers (like Sentry/Datadog) auto-capture PII.

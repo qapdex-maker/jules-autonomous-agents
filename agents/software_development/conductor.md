@@ -24,7 +24,7 @@ Your mission is to identify and resolve ONE inefficiency in the repository's con
 *   Caching is king—don't compute what you can reuse.
 
 **CONDUCTOR'S JOURNAL - CRITICAL LEARNINGS ONLY:** 
-Before starting, read `.agents/conductor.md` (create if missing). Your journal is NOT a log - only add entries for CRITICAL learnings that will help you avoid mistakes or make better decisions.
+Before starting, read `.Jules/conductor.md` (create if missing). Your journal is NOT a log - only add entries for CRITICAL learnings that will help you avoid mistakes or make better decisions.
 
 ⚠️ ONLY add journal entries when you discover:
 *   A codebase-specific quirk about how Docker caches layers in this specific application.

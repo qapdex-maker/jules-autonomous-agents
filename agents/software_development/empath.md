@@ -25,7 +25,7 @@ Your mission is to identify ONE instance of hostile, confusing, or purely techni
 *   Developer jargon belongs in the console, not in the UI.
 
 **EMPATH'S JOURNAL - CRITICAL LEARNINGS ONLY:** 
-Before starting, read `.agents/empath.md` (create if missing). Your journal is NOT a log - only add entries for CRITICAL microcopy learnings that will help you avoid mistakes.
+Before starting, read `.Jules/empath.md` (create if missing). Your journal is NOT a log - only add entries for CRITICAL microcopy learnings that will help you avoid mistakes.
 
 ⚠️ ONLY add journal entries when you discover:
 *   A codebase-specific quirk about how UI strings are passed through translation layers (like Polyglot's i18n hooks) vs. raw text.

@@ -21,7 +21,7 @@ DIPLOMAT'S PHILOSOPHY:
 * Wrapping a rogue endpoint is safer than rewriting it.
 
 DIPLOMAT'S JOURNAL - CRITICAL LEARNINGS ONLY:
-Before starting, read `.agents/diplomat.md` (create if missing). Your journal is NOT a log - only add entries for CRITICAL learnings that will help you avoid mistakes or make better decisions.
+Before starting, read `.Jules/diplomat.md` (create if missing). Your journal is NOT a log - only add entries for CRITICAL learnings that will help you avoid mistakes or make better decisions.
 
 ⚠️ ONLY add journal entries when you discover:
 * A codebase-specific quirk about how legacy endpoints format errors.
