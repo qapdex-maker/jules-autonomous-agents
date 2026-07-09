@@ -24,7 +24,7 @@ Your mission is to identify a public route or page missing critical machine-read
 *   Rely on the system—if a Meta wrapper or `<Head>` component exists, use it.
 
 **HERALD'S JOURNAL - CRITICAL LEARNINGS ONLY:** 
-Before starting, read `.agents/herald.md` (create if missing). Your journal is NOT a log - only add entries for CRITICAL SEO or metadata learnings.
+Before starting, read `.Jules/herald.md` (create if missing). Your journal is NOT a log - only add entries for CRITICAL SEO or metadata learnings.
 
 ⚠️ ONLY add journal entries when you discover:
 *   A codebase-specific quirk about how Server-Side Rendering (SSR) handles or hydrates meta tags in this specific app.

@@ -24,7 +24,7 @@ Your mission is to hunt for ONE instance of raw, unvalidated environment variabl
 *   An outdated `.env.example` is a roadblock for every new developer joining the project.
 
 **NOMAD'S JOURNAL - CRITICAL LEARNINGS ONLY:** 
-Before starting, read `.agents/nomad.md` (create if missing). Your journal is NOT a log - only add entries for CRITICAL learnings about how the repository handles environments.
+Before starting, read `.Jules/nomad.md` (create if missing). Your journal is NOT a log - only add entries for CRITICAL learnings about how the repository handles environments.
 
 ⚠️ ONLY add journal entries when you discover:
 *   A codebase-specific quirk about how Server-Side Rendering (SSR) handles environment variables vs. client-side hydration.

@@ -5,13 +5,14 @@
   <picture>
     <source srcset="assets/jules-readme-600.avif 1x, assets/jules-readme-1200.avif 2x" type="image/avif">
     <source srcset="assets/jules-readme-600.webp 1x, assets/jules-readme.webp 2x" type="image/webp">
-    <img src="assets/jules-readme-600.webp" alt="A collection of specialized Autonomous Agents - Designed to improve Codebase quality through focused, incremental improvements." width="600" height="253" decoding="async" fetchpriority="high">
+    <img src="assets/jules-readme-600.webp" alt="A collection of specialized Autonomous Agents - Designed to improve Codebase quality through focused, incremental improvements." width="600" height="253" decoding="async" fetchpriority="high" style="max-width: 100%; height: auto;">
   </picture>
 </p>
 
 # jules-autonomous-agents
 
-> **Note**: The Sentinel, Palette, and Bolt agents are originally based on prompts created by the team behind Google Jules. All credit to them.
+> [!NOTE]
+> The Sentinel, Palette, and Bolt agents are originally based on prompts created by the team behind Google Jules. All credit to them.
 
 ## Overview
 
@@ -25,28 +26,28 @@ This repository contains AI agents that perform specific maintenance tasks on co
 
 ## Available Agents
 
-### ⚡ [Bolt](agents/bolt.md)
+### <span role="img" aria-label="lightning bolt">⚡</span> [Bolt](agents/software_development/bolt.md)
 **Performance Optimization Agent** - Identifies and implements performance improvements that make applications measurably faster.
 
-### 🏰 [Bulwark](agents/bulwark.md)
+### <span role="img" aria-label="castle">🏰</span> [Bulwark](agents/software_development/bulwark.md)
 **System Resilience Agent** - Adds error boundaries, retry logic, and fallback mechanisms to make distributed systems fault-tolerant.
 
-### 📐 [Designer](agents/designer.md)
+### <span role="img" aria-label="triangular ruler">📐</span> [Designer](agents/software_development/designer.md)
 **Semantic Styling Agent** - Replaces hardcoded CSS and inconsistent styling with unified design tokens for better consistency.
 
-### 🌳 [Dryad](agents/dryad.md)
+### <span role="img" aria-label="deciduous tree">🌳</span> [Dryad](agents/software_development/dryad.md)
 **Code Quality Agent** - Performs scheduled reviews to eliminate code duplication and DRY violations through systematic refactoring.
 
-### 🧹 [Janitor](agents/janitor.md)
+### <span role="img" aria-label="broom">🧹</span> [Janitor](agents/software_development/janitor.md)
 **Codebase Cleaning Agent** - Removes dead code, technical debt, and unused dependencies to keep applications lean and maintainable.
 
-### 📚 [Librarian](agents/librarian.md)
+### <span role="img" aria-label="books">📚</span> [Librarian](agents/software_development/librarian.md)
 **Documentation Agent** - Maps out complex systems, updates stale documentation, and maintains a comprehensive catalogue of codebase knowledge.
 
-### 🎨 [Palette](agents/palette.md)
+### <span role="img" aria-label="artist palette">🎨</span> [Palette](agents/software_development/palette.md)
 **UX Enhancement Agent** - Adds micro-UX improvements, accessibility features, and delightful interactions to enhance user experience.
 
-### 🛡️ [Sentinel](agents/sentinel.md)
+### <span role="img" aria-label="shield">🛡️</span> [Sentinel](agents/software_development/sentinel.md)
 **Security Agent** - Identifies and fixes security vulnerabilities, adds security enhancements, and protects the codebase from threats.
 
 and more...

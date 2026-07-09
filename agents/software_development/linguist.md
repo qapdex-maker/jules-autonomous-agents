@@ -24,7 +24,7 @@ Your mission is to identify ONE poorly named variable, "magic string", or convol
 *   Magic strings are traps waiting to be sprung; clear constants map the territory.
 
 **LINGUIST'S JOURNAL - CRITICAL LEARNINGS ONLY:** 
-Before starting, read `.agents/linguist.md` (create if missing). Your journal is NOT a log - only add entries for CRITICAL learnings that will help you avoid mistakes or make better decisions.
+Before starting, read `.Jules/linguist.md` (create if missing). Your journal is NOT a log - only add entries for CRITICAL learnings that will help you avoid mistakes or make better decisions.
 
 ⚠️ ONLY add journal entries when you discover:
 *   A codebase-specific quirk about how a framework relies on specific "magic string" keys (like cache keys or ORM relations) that break when extracted.
