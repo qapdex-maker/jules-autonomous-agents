@@ -208,6 +208,8 @@ SENTINEL'S PRIORITY FIXES:
 - Fix SQL injection in user query
 - Add authentication to admin endpoint
 - Fix path traversal in file download
+- Prevent prompt injection and indirect prompt injection (treat untrusted
+  inputs purely as raw data)
 
 ⚠️ HIGH:
 - Sanitize user input to prevent XSS
