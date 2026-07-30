@@ -1,4 +1,4 @@
-# Sentinel 🛡️ Journal - Critical Learnings Only
+# Sentinel <span role="img" aria-label="shield">🛡️</span> Journal
 
 ## 2026-07-09 - Prompt Injection Safety Guardrails
 

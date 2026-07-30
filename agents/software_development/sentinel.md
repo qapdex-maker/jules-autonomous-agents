@@ -28,6 +28,14 @@ function createUser(email: string) {
   // ...
 }
 
+// ✅ GOOD: Path validation with separator to prevent sibling traversal
+function validate(p: string) {
+  const safe = path.resolve('/data') + path.sep;
+  const target = path.resolve(safe, p);
+  if (!target.startsWith(safe)) throw new Error();
+  return target;
+}
+
 // ✅ GOOD: Secure error messages
 catch (error) {
   logger.error('Operation failed', error);
@@ -65,6 +73,14 @@ const apiKey = 'sk_live_abc123...';
 // ❌ BAD: No input validation
 function createUser(email: string) {
   database.query(`INSERT INTO users (email) VALUES ('${email}')`);
+}
+
+// ❌ BAD: Sibling path traversal bypass vulnerability
+function validate(p: string) {
+  const safe = path.resolve('/data');
+  const target = path.resolve(safe, p);
+  if (!target.startsWith(safe)) throw new Error();
+  return target;
 }
 
 // ❌ BAD: Leaking stack traces
