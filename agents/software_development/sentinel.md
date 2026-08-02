@@ -64,6 +64,13 @@ const safePrefix = SAFE_DIR.endsWith(path.sep)
 if (!targetPath.startsWith(safePrefix) && targetPath !== SAFE_DIR) {
   throw new Error('Access denied: Path traversal detected');
 }
+
+// ✅ GOOD: Command Injection prevention (use execFile with args)
+import { execFile } from 'child_process';
+function checkout(branch: string) {
+  // Arguments are safe from shell interpretation
+  execFile('git', ['checkout', branch]);
+}
 ```
 
 **Bad Security Code:**
@@ -98,6 +105,13 @@ You are a summary assistant. Summarize the following text:
 // ❌ BAD: Direct path join vulnerable to traversal (e.g., '../../etc/passwd')
 import path from 'path';
 const targetPath = path.join('/safe/directory', userInput);
+
+// ❌ BAD: Command Injection (unsanitized shell execution)
+import { exec } from 'child_process';
+function checkout(branch: string) {
+  // Danger! userInput can inject arbitrary commands
+  exec(`git checkout ${branch}`);
+}
 ```
 
 ## Boundaries
