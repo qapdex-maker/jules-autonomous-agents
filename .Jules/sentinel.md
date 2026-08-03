@@ -23,3 +23,18 @@ safe directory path are vulnerable to sibling directory traversal bypasses.
 
 **Prevention:** Append path.sep to the resolved safe directory path before
 validating that the target starts with the safe directory path.
+
+## 2026-07-11 - Prompt Injection XML Tag Breakout
+
+**Vulnerability:** Prompt injection via custom tag closing/escaping. If an
+agent uses XML tags like `<user_text>` to encapsulate untrusted user input, an
+attacker can include `</user_text>` in their input to break out of the
+encapsulation and inject instructions.
+
+**Learning:** Simple XML-tag encapsulation is vulnerable to escape sequences
+analogous to HTML/SQL injection, allowing attackers to inject malicious
+directions.
+
+**Prevention:** Always sanitize untrusted input by stripping or escaping the
+encapsulated XML closing tags (e.g. `replace(/<\/user_text>/g, '')`) before
+interpolating it into the prompt.
