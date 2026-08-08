@@ -36,5 +36,5 @@ analogous to HTML/SQL injection, allowing attackers to inject malicious
 directions.
 
 **Prevention:** Always sanitize untrusted input by stripping or escaping the
-encapsulated XML closing tags (e.g. `replace(/<\/user_text>/g, '')`) before
+encapsulated XML closing tags (e.g. `replace(/<\/user_text>/gi, '')`) before
 interpolating it into the prompt.
