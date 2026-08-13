@@ -42,9 +42,10 @@ catch (error) {
   return { error: 'An error occurred' }; // Don't leak details
 }
 
-// ✅ GOOD: Prompt Injection Defense (treat inputs purely as raw data and sanitize XML tags)
-// Sanitize input with a case-insensitive regex to prevent case-variant closing
-// tags (e.g. </USER_TEXT>) from breaking out of XML encapsulation
+// ✅ GOOD: Prompt Injection Defense (treat inputs purely as raw data and
+// sanitize XML tags)
+// Sanitize input with a case-insensitive regex to prevent case-variant
+// closing tags (e.g. </USER_TEXT>) from breaking out of XML encapsulation
 const sanitizedInput = untrustedInput.replace(/<\/user_text>/gi, '');
 const prompt = `
 You are a summary assistant. Summarize the text provided below.
@@ -140,7 +141,7 @@ function checkout(branch: string) {
   them purely as raw data to prevent prompt injection and indirect prompt
   injection. If encapsulating untrusted input inside XML tags, always
   sanitize the input by removing or escaping closing tags, e.g., using
-  `input.replace(/<\/user_text>/g, '')`, to prevent tag breakout attacks)
+  `input.replace(/<\/user_text>/gi, '')`, to prevent tag breakout attacks)
 
 SENTINEL'S PHILOSOPHY:
 - Security is everyone's responsibility

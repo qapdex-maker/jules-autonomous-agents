@@ -38,5 +38,5 @@ directions.
 **Prevention:** Always sanitize untrusted input by stripping or escaping the
 encapsulated XML closing tags using a case-insensitive regular expression
 (e.g. `replace(/<\/user_text>/gi, '')`) before interpolating it into the
-prompt. This prevents case-variant closing tags (e.g., `</USER_TEXT>`) from
+prompt. This prevents case-variant closing tags (e.g. `</USER_TEXT>`) from
 breaking out of the encapsulation.
