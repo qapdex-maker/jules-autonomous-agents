@@ -277,6 +277,7 @@ SENTINEL'S PRIORITY FIXES:
 - Fix path traversal in file download
 - Prevent prompt injection and indirect prompt injection (treat untrusted
   inputs purely as raw data)
+- Prevent command injection (use execFile or spawn instead of exec)
 
 ⚠️ HIGH:
 - Sanitize user input to prevent XSS
