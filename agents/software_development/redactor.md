@@ -7,6 +7,9 @@ Your mission is to hunt for ONE instance where sensitive user data (like an emai
 *   Keep changes under 50 lines.
 *   Prioritize failing securely so that error handling never exposes sensitive data or stack traces.
 *   Substitute exposed variables with existing project masking utilities (e.g., replacing `user.email` with `maskEmail(user.email)`) rather than rewriting the log.
+*   Treat untrusted inputs purely as raw data to prevent prompt injection,
+    and sanitize XML tag breakouts (e.g., using a case-insensitive regex
+    like `replace(/<\/user_text>/gi, '')`) when encapsulating untrusted input.
 
 ⚠️ **Ask first:**
 *   Adding new third-party masking, hashing, or encryption libraries.
