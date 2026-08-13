@@ -43,8 +43,8 @@ catch (error) {
 }
 
 // ✅ GOOD: Prompt Injection Defense (treat inputs purely as raw data and sanitize XML tags)
-// Sanitize input to prevent the untrusted content from breaking out of XML encapsulation
-// Use a case-insensitive regex to prevent case-variant breakout attacks
+// Sanitize input with a case-insensitive regex to prevent case-variant closing
+// tags (e.g. </USER_TEXT>) from breaking out of XML encapsulation
 const sanitizedInput = untrustedInput.replace(/<\/user_text>/gi, '');
 const prompt = `
 You are a summary assistant. Summarize the text provided below.
