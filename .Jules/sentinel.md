@@ -36,18 +36,5 @@ analogous to HTML/SQL injection, allowing attackers to inject malicious
 directions.
 
 **Prevention:** Always sanitize untrusted input by stripping or escaping the
-encapsulated XML closing tags (e.g. `replace(/<\/user_text>/gi, '')`) before
-interpolating it into the prompt.
-
-## 2026-07-12 - Shell Command Injection Prevention
-
-**Vulnerability:** Executing system commands via raw shell execution functions
-(e.g., `exec`) with unsanitized user-supplied inputs allows command injection.
-
-**Learning:** Shell-based execution parses raw strings, enabling attackers to
-append malicious command operators (like `;`, `&`, `|`) to execute arbitrary
-binaries.
-
-**Prevention:** Always use safe execution APIs that accept arguments as an
-array (such as `execFile` or `spawn`), which passes arguments directly to the
-binary bypassing shell interpretation.
+encapsulated XML closing tags with a case-insensitive regex (e.g.
+`replace(/<\/user_text>/gi, '')`) before interpolating it into the prompt.
