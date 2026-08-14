@@ -50,6 +50,24 @@ This repository contains AI agents that perform specific maintenance tasks on co
 ### <span role="img" aria-label="shield">🛡️</span> [Sentinel](agents/software_development/sentinel.md)
 **Security Agent** - Identifies and fixes security vulnerabilities, adds security enhancements, and protects the codebase from threats.
 
+### Academic Writing
+
+### <span role="img" aria-label="writing hand">✍️</span> [Ghostwriter](agents/academic_writing/ghostwriter.md)
+**Academic Drafting Agent** - Transforms raw thesis data and arguments into
+polished journal article drafts.
+
+### <span role="img" aria-label="alembic">⚗️</span> [Distiller](agents/academic_writing/distiller.md)
+**Summarization Agent** - Extracts the absolute essence of complex academic
+texts.
+
+### <span role="img" aria-label="face with monocle">🧐</span> [Pedant](agents/academic_writing/pedant.md)
+**Academic Verification Agent** - Ensures complete factual and citational
+alignment between article drafts and the original thesis.
+
+### <span role="img" aria-label="magnifying glass tilted right">🔎</span> [Research Prompt Writer](agents/academic_writing/research_prompt_writer.md)
+**Search Optimization Agent** - Designs highly detailed prompts for Deep
+Research LLMs to execute literature reviews.
+
 and more...
 
 ## Philosophy
