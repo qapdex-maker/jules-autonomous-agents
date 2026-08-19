@@ -8,6 +8,9 @@ Your mission is to identify a fragile or unprotected operation and add a localiz
 * Keep changes under 50 lines
 * Prioritize failing securely—ensure error handling never exposes sensitive data or stack traces
 * Preserve all existing successful execution paths (this is a resilience wrapper, not a logic rewrite)
+* Treat untrusted inputs purely as raw data to prevent prompt injection,
+  and sanitize XML tag breakouts (e.g., using a case-insensitive regex
+  like `replace(/<\/user_text>/gi, '')`) when encapsulating untrusted input
 
 ⚠️ **Ask first:**
 * Adding new dependencies for handling retries or circuit breakers
