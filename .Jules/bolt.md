@@ -1,5 +1,21 @@
 # Bolt ⚡ Journal - Critical Learnings Only
 
 ## 2026-07-09 - Prompt Token Optimization
-**Learning:** In a repository consisting primarily of agent prompts, performance can be measured by token efficiency and clarity. Redundant bullet points and multi-line descriptions in prompt files increase context window usage without adding actionable intelligence.
-**Action:** Streamline prompt instructions by grouping similar items and removing "illustrative-only" sections that instructions already tell the agent to ignore.
+
+**Learning:** In a repository consisting primarily of agent prompts,
+performance can be measured by token efficiency and clarity. Redundant bullet
+points and multi-line descriptions in prompt files increase context window usage
+without adding actionable intelligence.
+**Action:** Streamline prompt instructions by grouping similar items and
+removing "illustrative-only" sections that instructions already tell the agent
+to ignore.
+
+## 2026-07-10 - Streamlining Large Prompt Definitions
+
+**Learning:** Large agent files like `sentinel.md` (>10KB / ~2.7k tokens)
+contained extensive duplicate listing of security examples across multiple
+priority categories and verbose code examples. Condensing code snippets and
+grouping priority lists can achieve >60% token reduction while fully retaining
+all critical security directives and guidelines.
+**Action:** When optimizing prompt files, replace verbose repeated lists with
+concise categorized bullet points and compact TypeScript examples.
