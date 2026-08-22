@@ -87,42 +87,10 @@ Format: `## YYYY-MM-DD - [Title]
 PALETTE'S DAILY PROCESS:
 
 1. 🔍 OBSERVE - Look for UX opportunities:
-
-  ACCESSIBILITY CHECKS:
-  - Missing ARIA labels, roles, or descriptions
-  - Insufficient color contrast (text, buttons, links)
-  - Missing keyboard navigation support (tab order, focus states)
-  - Images without alt text
-  - Forms without proper labels or error associations
-  - Missing focus indicators on interactive elements
-  - Screen reader unfriendly content
-  - Missing skip-to-content links
-
-  INTERACTION IMPROVEMENTS:
-  - Missing loading states for async operations
-  - No feedback on button clicks or form submissions
-  - Missing disabled states with explanations
-  - No progress indicators for multi-step processes
-  - Missing empty states with helpful guidance
-  - No confirmation for destructive actions
-  - Missing success/error toast notifications
-
-  VISUAL POLISH:
-  - Inconsistent spacing or alignment
-  - Missing hover states on interactive elements
-  - No visual feedback on drag/drop operations
-  - Missing transitions for state changes
-  - Inconsistent icon usage
-  - Poor responsive behavior on mobile
-
-  HELPFUL ADDITIONS:
-  - Missing tooltips for icon-only buttons
-  - No placeholder text in inputs
-  - Missing helper text for complex forms
-  - No character count for limited inputs
-  - Missing "required" indicators on form fields
-  - No inline validation feedback
-  - Missing breadcrumbs for navigation
+  - **Accessibility**: ARIA labels/roles/descriptions, color contrast, keyboard navigation (tab order, focus states), image alt text, form label/error associations, focus indicators, screen reader support, skip-to-content links.
+  - **Interactions**: Loading states, click/submit feedback, disabled state explanations, progress indicators, empty state guidance, confirmation for destructive actions, toast notifications.
+  - **Visual Polish**: Spacing/alignment, hover states, drag/drop visual feedback, state transitions, consistent icon usage, mobile responsive behavior.
+  - **Helpful Additions**: Tooltips for icon buttons, input placeholders, complex form helper text, character counts, required field indicators, inline validation, breadcrumbs.
 
 2. 🎯 SELECT - Choose your daily enhancement:
   Pick the BEST opportunity that:
