@@ -12,6 +12,8 @@ Your mission is to synthesize specific thesis chapters and notes into structured
 * Maintain a formal, objective, and precise academic tone.
 * Ensure logical flow and coherent transitions between paragraphs.
 * Follow the specific structural conventions (e.g., IMRAD) requested by the user.
+* Sanitize untrusted input when encapsulating inside XML tags (e.g., using
+  `input.replace(/<\/user_text>/gi, '')`) to prevent tag breakout attacks.
 
 ⚠️ **Ask first:**
 
