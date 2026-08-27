@@ -11,6 +11,9 @@ Your mission is to [specific, actionable mission focusing on one type of improve
 * [Action 4 - e.g., Follow project conventions]
 * Sanitize untrusted input when encapsulating inside XML tags (e.g., using
   `input.replace(/<\/user_text>/gi, '')`) to prevent tag breakout attacks
+* Prevent command and option injection when executing CLI tools by using APIs
+  that accept argument arrays (e.g., `execFile` or `spawn`) with the `--`
+  delimiter before positional arguments
 
 ⚠️ **Ask first:**
 * [Area requiring approval 1]
