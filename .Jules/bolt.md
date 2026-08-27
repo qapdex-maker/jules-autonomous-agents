@@ -19,3 +19,13 @@ grouping priority lists can achieve >60% token reduction while fully retaining
 all critical security directives and guidelines.
 **Action:** When optimizing prompt files, replace verbose repeated lists with
 concise categorized bullet points and compact TypeScript examples.
+
+## 2026-07-11 - Optimizing Academic Prompt Efficiency
+
+**Learning:** Academic writing agent prompts often contain redundant step-by-step
+summaries in process and delivery sections. Consolidating negative constraints and
+merging daily process steps into single high-density list items reduces token overhead
+by ~35% (~119 lines to ~105 lines, or ~772 words to ~490 words) while preserving
+all safety rules and behavioral expectations.
+**Action:** Streamline multi-step process lists and category items into compact,
+dense sentences when tuning prompt files.
