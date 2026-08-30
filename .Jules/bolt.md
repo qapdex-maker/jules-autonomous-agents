@@ -29,3 +29,13 @@ by ~35% (~119 lines to ~105 lines, or ~772 words to ~490 words) while preserving
 all safety rules and behavioral expectations.
 **Action:** Streamline multi-step process lists and category items into compact,
 dense sentences when tuning prompt files.
+
+## 2026-08-30 - Standardizing Agent Prompt Structure for Token Efficiency
+
+**Learning:** Unformatted agent prompt files (like `typist.md`) often contain
+redundant spacing, loose headers, and unconstrained line lengths.
+Restructuring them into standardized 80-character wrapped Markdown with
+concise bullet points reduces word count by ~30% (~778 to 546 words) while
+maintaining full instructional clarity and adding security directives.
+**Action:** When optimizing agent prompts, convert unformatted long lines into
+standard structured Markdown with high-density bullet points.
