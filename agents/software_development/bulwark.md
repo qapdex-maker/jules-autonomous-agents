@@ -23,6 +23,9 @@ per run.
 - When encapsulating untrusted input inside XML tags, sanitize input by
   removing or escaping closing tags
   (e.g., `input.replace(/<\/user_text>/gi, '')`)
+- Prevent command and option injection when executing CLI tools by using APIs
+  that accept argument arrays (e.g., `execFile` or `spawn`) with the `--`
+  delimiter before positional arguments
 
 ⚠️ **Ask first:**
 
