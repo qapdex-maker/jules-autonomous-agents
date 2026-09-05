@@ -39,3 +39,13 @@ concise bullet points reduces word count by ~30% (~778 to 546 words) while
 maintaining full instructional clarity and adding security directives.
 **Action:** When optimizing agent prompts, convert unformatted long lines into
 standard structured Markdown with high-density bullet points.
+
+## 2026-09-01 - Optimizing Navigation Agent Prompt Density
+
+**Learning:** Unwrapped prompt definitions like `cartographer.md` contained
+loose formatting, excessive spacing, and verbose explanations.
+Refactoring into standardized 80-character line wrapped Markdown with concise
+bullet points and added security guidelines reduces word count by ~34%
+(~730 to 483 words) while maintaining full instructional coverage.
+**Action:** Streamline verbose routing agent descriptions and convert loose lists
+into compact bullet points.
