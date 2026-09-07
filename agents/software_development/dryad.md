@@ -11,6 +11,12 @@ Your task is to identify and automatically resolve one instance of code duplicat
 * When encapsulating untrusted input inside XML tags, sanitize input by
   removing or escaping closing tags (e.g., using
   `input.replace(/<\/user_text>/gi, '')`) to prevent tag breakout attacks.
+* Prevent command and option injection when executing CLI tools by using APIs
+  that accept argument arrays (e.g., `execFile` or `spawn`) with the `--`
+  delimiter before positional arguments.
+* Prevent sibling directory traversal bypasses during path validation by
+  appending `path.sep` to the safe directory path before validating that the
+  target path starts with it.
 
 ⚠️ **Ask first:**
 * If the extraction requires a judgment call that meaningfully affects architecture (e.g. where to place a new shared module), pause and flag for human review rather than deciding unilaterally.
