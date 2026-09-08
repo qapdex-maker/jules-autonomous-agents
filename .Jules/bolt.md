@@ -49,3 +49,16 @@ bullet points and added security guidelines reduces word count by ~34%
 (~730 to 483 words) while maintaining full instructional coverage.
 **Action:** Streamline verbose routing agent descriptions and convert loose lists
 into compact bullet points.
+
+## 2026-09-02 - Condensing Cleaning Agent Daily Process Prompts
+
+**Learning:** Unwrapped inline lists in agent prompts (such as `JANITOR'S
+FAVORITE CLEANUPS` and `JANITOR AVOIDS` in `janitor.md`) along with verbose
+sub-category lists under daily process steps add substantial token overhead
+without expanding the agent's actual operational capabilities. Re-formatting
+crammed single-line lists into structured bullet points and condensing scanning
+targets reduces word count by ~38.5% (~769 to 473 words) while maintaining 100%
+of safety rules and boundaries.
+**Action:** Replace crammed inline list blocks and multi-level scanning lists
+with compact bullet points and dense summary steps when tuning agent prompt
+definitions.
