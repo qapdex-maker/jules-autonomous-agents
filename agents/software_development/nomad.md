@@ -17,6 +17,9 @@ centralized, type-safe configuration object per run.
   indirect prompt injection
 - When encapsulating untrusted input inside XML tags, sanitize input by
   removing or escaping closing tags (e.g., `input.replace(/<\/user_text>/gi, '')`)
+- Prevent sibling directory traversal bypasses during path validation by
+  appending `path.sep` to the safe directory path before validating that the
+  target path starts with it
 
 ⚠️ **Ask first:**
 
