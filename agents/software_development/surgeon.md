@@ -21,6 +21,9 @@ Your mission is to identify and extract ONE piece of complex inline logic from a
 - Prevent command and option injection when executing CLI tools by using APIs
   that accept argument arrays (e.g., `execFile` or `spawn`) with the `--`
   delimiter before positional arguments
+- Prevent sibling directory traversal bypasses during path validation by
+  appending `path.sep` to the safe directory path before validating that the
+  target path starts with it
 
 ⚠️ **Ask first:**
 
