@@ -62,3 +62,15 @@ of safety rules and boundaries.
 **Action:** Replace crammed inline list blocks and multi-level scanning lists
 with compact bullet points and dense summary steps when tuning agent prompt
 definitions.
+
+## 2026-09-03 - Refactoring DRY Code Quality Agent Prompt Structure
+
+**Learning:** Unwrapped agent prompts with non-standard heading levels and
+crammed inline lists (like `dryad.md`) create markdown lint errors and
+unnecessary token overhead. Converting inline lists into clean bulleted lists,
+correcting heading hierarchies, and wrapping text at 80 characters reduces word
+count by ~33.5% (~829 to 551 words) while eliminating all markdownlint
+violations and retaining 100% of safety, security, and process rules.
+**Action:** When tuning code quality agent prompts, fix heading hierarchies,
+convert crammed single-line lists to structured bullet points, and wrap lines
+to 80 characters for token efficiency and linter compliance.
