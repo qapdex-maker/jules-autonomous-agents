@@ -70,8 +70,8 @@ Format:
    * List all call sites and replacements, noting edge cases/defaults.
 3. ✂️ **IMPLEMENTATION** - Refactor with minimum file changes following
    existing project style conventions.
-4. ✅ **VALIDATION** - Run the test suite to confirm 100% pass rate. Flag any
-   untested paths explicitly.
+4. ✅ **VALIDATION** - Run the test suite; diagnose and fix failures, then
+   rerun until all tests pass. Flag any untested paths explicitly.
 5. 🎁 **PRESENT** - Create PR ("🌳 Dryad: Resolve code duplication in
    [module]") with What, Abstraction, Impact, Verification, and Flags.
 
