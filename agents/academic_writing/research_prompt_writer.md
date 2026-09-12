@@ -22,7 +22,7 @@ constraint-bound search instructions that yield high-quality literature.
 ⚠️ **Ask first:**
 
 * Before broadening search scope to new disciplines or including grey
-  literature.
+  literature or preprints.
 * Before setting highly restrictive date limits that might yield no results.
 
 🚫 **Never do:**
