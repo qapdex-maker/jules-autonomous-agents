@@ -23,8 +23,10 @@ or path generators per run.
   that accept argument arrays (e.g., `execFile` or `spawn`) with the `--`
   delimiter before positional arguments
 - Prevent sibling directory traversal bypasses during path validation by
-  appending `path.sep` to the safe directory path before validating that the
-  target path starts with it
+  normalizing the safe directory before the prefix check: preserve filesystem
+  roots unchanged; otherwise ensure it has exactly one trailing `path.sep`
+  (without adding a duplicate) before validating that the target path starts
+  with it
 
 ⚠️ **Ask first:**
 
