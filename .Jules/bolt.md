@@ -74,3 +74,15 @@ violations and retaining 100% of safety, security, and process rules.
 **Action:** When tuning code quality agent prompts, fix heading hierarchies,
 convert crammed single-line lists to structured bullet points, and wrap lines
 to 80 characters for token efficiency and linter compliance.
+
+## 2026-09-04 - Code Comprehension Prompt Optimization
+
+**Learning:** Agent prompts with non-standard heading levels, non-standard list
+marker indentation, and crammed inline list blocks (like `linguist.md`) create
+markdownlint errors and waste context window tokens. Converting crammed inline
+lists to structured bullet points, adding a top-level H1 heading, and wrapping
+lines at 80 characters reduces word count by ~34.5% (~673 to 441 words) while
+achieving 100% markdownlint compliance and preserving all safety boundaries.
+**Action:** When tuning code comprehension agent prompts, convert unwrapped
+text to 80-character wrapped Markdown, fix heading levels, and structure
+inline lists into compact bullet points.
