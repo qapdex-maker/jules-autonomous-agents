@@ -22,11 +22,6 @@ or path generators per run.
 - Prevent command and option injection when executing CLI tools by using APIs
   that accept argument arrays (e.g., `execFile` or `spawn`) with the `--`
   delimiter before positional arguments
-- Prevent sibling directory traversal bypasses during path validation by
-  normalizing the safe directory before the prefix check: preserve filesystem
-  roots unchanged; otherwise ensure it has exactly one trailing `path.sep`
-  (without adding a duplicate) before validating that the target path starts
-  with it
 
 ⚠️ **Ask first:**
 
