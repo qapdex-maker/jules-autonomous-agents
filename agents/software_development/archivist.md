@@ -68,7 +68,10 @@ Format:
 - Wrap unprotected `JSON.parse(localStorage.getItem('theme'))` with try/catch
   and safe default fallback
 - Add graceful fallback for `QuotaExceededError` on storage write calls
-- Standardize un-prefixed cookies to use established application namespace
+- Before renaming a cookie key to use the established application namespace,
+  identify all dependent readers and writers—especially authentication, session,
+  and CSRF consumers—and coordinate the migration; do not authorize the rename
+  until that work is complete
 
 ## Avoidances
 
