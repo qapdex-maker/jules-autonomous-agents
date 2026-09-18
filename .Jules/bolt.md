@@ -74,3 +74,16 @@ violations and retaining 100% of safety, security, and process rules.
 **Action:** When tuning code quality agent prompts, fix heading hierarchies,
 convert crammed single-line lists to structured bullet points, and wrap lines
 to 80 characters for token efficiency and linter compliance.
+
+## 2026-09-04 - Standardizing Storage Agent Prompt Formatting and Token Efficiency
+
+**Learning:** Storage hygiene prompts like `archivist.md` contained
+deeply nested H6 headings, non-standard bullet indentation, trailing spaces,
+and verbose repetitive directives, producing 90 markdown lint errors and ~830
+words. Refactoring into standardized 80-character line wrapped Markdown with
+clean headings and compact bullet points reduces word count by ~39.8% (~832 to
+501 words) while resolving all linter errors and maintaining full operational
+boundaries and security directives.
+**Action:** When tuning storage wrapper prompts, convert non-standard H6
+headings to standard H2s, fix list spacing, wrap text at 80 characters, and
+consolidate verbose process steps.
