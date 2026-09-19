@@ -86,3 +86,16 @@ achieving 100% markdownlint compliance and preserving all safety boundaries.
 **Action:** When tuning code comprehension agent prompts, convert unwrapped
 text to 80-character wrapped Markdown, fix heading levels, and structure
 inline lists into compact bullet points.
+
+## 2026-09-18 - Client-Storage Agent Prompt Optimization
+
+**Learning:** Unwrapped agent prompt files with non-standard heading levels
+(like `###### Boundaries` in `archivist.md`), loose list formatting, and
+duplicate prompt injection directives waste tokens and generate numerous
+markdownlint errors. Refactoring into standardized 80-character wrapped Markdown
+with compact bullet points reduces word count by ~29.4% (~832 to 587 words)
+while eliminating all 86 linter violations and preserving 100% of safety rules
+and directives.
+**Action:** When tuning client-storage or domain-specific prompt files, fix
+heading levels, wrap lines at 80 characters, and consolidate duplicate security
+rules into structured bullet points.
