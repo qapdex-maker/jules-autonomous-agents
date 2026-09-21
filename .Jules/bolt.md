@@ -86,3 +86,15 @@ achieving 100% markdownlint compliance and preserving all safety boundaries.
 **Action:** When tuning code comprehension agent prompts, convert unwrapped
 text to 80-character wrapped Markdown, fix heading levels, and structure
 inline lists into compact bullet points.
+
+## 2026-09-05 - Test Fixture Prompt Optimization
+
+**Learning:** Unwrapped test data agent prompts with non-standard heading
+hierarchies and inline crammed list blocks (like `alchemist.md`) cause
+markdownlint violations and waste LLM context window tokens. Refactoring crammed
+inline lists into structured bullet points, adding a top-level H1 heading, and
+wrapping lines at 80 characters reduces word count by ~36.7% (~708 to 448 words)
+while eliminating all markdownlint errors and preserving all safety rules.
+**Action:** When optimizing test fixture agent prompts, standardize line
+wrapping at 80 characters, fix heading levels, and convert crammed single-line
+lists into compact bullet points.
