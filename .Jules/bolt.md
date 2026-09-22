@@ -22,11 +22,12 @@ concise categorized bullet points and compact TypeScript examples.
 
 ## 2026-07-11 - Optimizing Academic Prompt Efficiency
 
-**Learning:** Academic writing agent prompts often contain redundant step-by-step
-summaries in process and delivery sections. Consolidating negative constraints and
-merging daily process steps into single high-density list items reduces token overhead
-by ~35% (~119 lines to ~105 lines, or ~772 words to ~490 words) while preserving
-all safety rules and behavioral expectations.
+**Learning:** Academic writing agent prompts often contain redundant
+step-by-step summaries in process and delivery sections. Consolidating
+negative constraints and merging daily process steps into single high-density
+list items reduces token overhead by ~35% (~119 lines to ~105 lines, or ~772
+words to ~490 words) while preserving all safety rules and behavioral
+expectations.
 **Action:** Streamline multi-step process lists and category items into compact,
 dense sentences when tuning prompt files.
 
@@ -47,8 +48,8 @@ loose formatting, excessive spacing, and verbose explanations.
 Refactoring into standardized 80-character line wrapped Markdown with concise
 bullet points and added security guidelines reduces word count by ~34%
 (~730 to 483 words) while maintaining full instructional coverage.
-**Action:** Streamline verbose routing agent descriptions and convert loose lists
-into compact bullet points.
+**Action:** Streamline verbose routing agent descriptions and convert loose
+lists into compact bullet points.
 
 ## 2026-09-02 - Condensing Cleaning Agent Daily Process Prompts
 
@@ -86,3 +87,15 @@ achieving 100% markdownlint compliance and preserving all safety boundaries.
 **Action:** When tuning code comprehension agent prompts, convert unwrapped
 text to 80-character wrapped Markdown, fix heading levels, and structure
 inline lists into compact bullet points.
+
+## 2026-09-05 - Documentation Agent Prompt Optimization
+
+**Learning:** Documentation agent prompts with non-standard heading levels
+(e.g., `#### Boundaries`), unwrapped text, and verbose multi-level list
+structures (like `librarian.md`) create markdownlint violations and consume
+excessive tokens. Converting unwrapped text to 80-character wrapped Markdown,
+standardizing heading levels (H1/H2), and condensing daily process steps
+reduces word count by ~40.7% (~789 to 468 words) while resolving all 51
+markdownlint errors and preserving 100% of boundaries and security rules.
+**Action:** When tuning documentation agent prompts, standardize heading levels
+to H1/H2, wrap lines to 80 characters, and condense multi-level process steps.
