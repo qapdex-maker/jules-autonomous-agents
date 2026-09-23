@@ -86,3 +86,15 @@ achieving 100% markdownlint compliance and preserving all safety boundaries.
 **Action:** When tuning code comprehension agent prompts, convert unwrapped
 text to 80-character wrapped Markdown, fix heading levels, and structure
 inline lists into compact bullet points.
+
+## 2026-09-05 - Streamlining Documentation Agent Prompt Efficiency
+
+**Learning:** Verbose documentation agent prompts with non-standard heading
+hierarchies and loose list formatting (such as `librarian.md`) contain
+unnecessary token overhead and markdownlint errors. Standardizing heading
+hierarchies, wrapping at 80 characters, and consolidating daily process steps
+reduces word count by ~42.7% (~789 to 452 words) while achieving 100%
+markdownlint compliance and preserving all security guidelines.
+**Action:** When optimizing documentation prompts, condense multi-bullet daily
+processes into concise list items and enforce standard 80-character wrapped
+Markdown formatting.
