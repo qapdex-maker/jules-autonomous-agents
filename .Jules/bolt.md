@@ -86,3 +86,16 @@ achieving 100% markdownlint compliance and preserving all safety boundaries.
 **Action:** When tuning code comprehension agent prompts, convert unwrapped
 text to 80-character wrapped Markdown, fix heading levels, and structure
 inline lists into compact bullet points.
+
+## 2026-09-05 - Documentation Agent Prompt Token Optimization
+
+**Learning:** Documentation agent prompt files (like `librarian.md`) often
+contain non-standard headings, unwrapped lines, inline lists, and formatting
+defects that generate markdownlint errors and increase token overhead.
+Restructuring `librarian.md` with a top-level H1 heading, standard list spacing,
+80-character wrapped lines, and positive security directives reduces word
+count by ~24% (~789 to 599 words) while achieving 100% markdownlint compliance
+and preserving all core documentation mapping directives.
+**Action:** When tuning documentation agent prompt files, wrap text at 80
+characters, fix heading levels and list blank lines, and structure inline
+lists into compact bullet points.
