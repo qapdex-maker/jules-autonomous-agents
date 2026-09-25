@@ -86,3 +86,13 @@ achieving 100% markdownlint compliance and preserving all safety boundaries.
 **Action:** When tuning code comprehension agent prompts, convert unwrapped
 text to 80-character wrapped Markdown, fix heading levels, and structure
 inline lists into compact bullet points.
+
+## 2026-09-05 - Bolt Prompt Token Optimization
+
+**Learning:** Refactoring verbose agent prompt definitions (like `bolt.md`)
+into high-density concise sentences wrapped at 80 characters reduces word count
+by ~15.2% (409 to 347 words) while preserving all safety boundaries, process
+stages, and security directives.
+**Action:** When optimizing performance agent prompts, condense repetitive
+phrasing into concise, dense sentences while preserving all safety
+boundaries and workflow requirements.
