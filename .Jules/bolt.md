@@ -86,3 +86,16 @@ achieving 100% markdownlint compliance and preserving all safety boundaries.
 **Action:** When tuning code comprehension agent prompts, convert unwrapped
 text to 80-character wrapped Markdown, fix heading levels, and structure
 inline lists into compact bullet points.
+
+## 2026-09-05 - Storage Hygiene Prompt Token Efficiency Optimization
+
+**Learning:** Client-storage agent definitions with non-standard heading
+levels (e.g., `###### Boundaries` or bold text section headers) and unwrapped
+inline list blocks (like `archivist.md`) generate markdown linter errors and
+waste LLM context window tokens. Standardizing Markdown headers to H1/H2,
+wrapping lines at 80 characters, and consolidating verbose process lists into
+structured bullet points reduces word count by ~38.5% (~832 to 512 words) while
+fully preserving all safety rules, boundaries, and security protocols.
+**Action:** Streamline client-storage agent prompt definitions by fixing
+heading hierarchies, wrapping text to 80 characters, and converting crammed
+inline lists into structured bullet points.
