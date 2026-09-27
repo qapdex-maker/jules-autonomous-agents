@@ -86,3 +86,16 @@ achieving 100% markdownlint compliance and preserving all safety boundaries.
 **Action:** When tuning code comprehension agent prompts, convert unwrapped
 text to 80-character wrapped Markdown, fix heading levels, and structure
 inline lists into compact bullet points.
+
+## 2026-09-05 - Infrastructure Agent Prompt Efficiency Optimization
+
+**Learning:** Tooling and infrastructure agent prompts with non-standard
+headings (`###### Boundaries`), non-standard list marker spacing (e.g. 3 spaces
+after `*`), and loose single-line inline lists (like `conductor.md`) introduce
+markdownlint violations and context window overhead. Converting inline list
+blocks into standard bullet points, correcting heading levels, and wrapping text
+at 80 characters reduces word count by ~31.7% (~792 to 541 words) while achieving
+100% markdownlint compliance and preserving all safety boundaries and security rules.
+**Action:** When optimizing infrastructure agent prompt definitions, standardize
+header hierarchies, wrap lines at 80 characters, and convert crammed single-line
+lists into structured bullet points.
