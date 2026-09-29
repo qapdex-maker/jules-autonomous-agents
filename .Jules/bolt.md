@@ -99,3 +99,17 @@ at 80 characters reduces word count by ~31.7% (~792 to 541 words) while achievin
 **Action:** When optimizing infrastructure agent prompt definitions, standardize
 header hierarchies, wrap lines at 80 characters, and convert crammed single-line
 lists into structured bullet points.
+
+## 2026-09-06 - Client Storage Agent Prompt Token Efficiency
+
+**Learning:** Unwrapped client-storage hygiene prompts with non-standard
+headings (`###### Boundaries`), 3-space list marker indentation, loose inline
+lists, and bold text pseudo-headings (like `archivist.md`) introduce
+markdownlint violations and context window overhead. Converting inline list
+blocks into standard bullet points, correcting heading levels to H1/H2, and
+wrapping text at 80 characters reduces word count by ~43.4% (~832 to 471 words)
+while achieving 100% markdownlint compliance and preserving all safety
+boundaries, security rules, and storage failure handling guidelines.
+**Action:** When optimizing browser storage agent prompt definitions,
+standardize header hierarchies to H1/H2, wrap lines at 80 characters, and
+convert loose inline lists into structured bullet points.
