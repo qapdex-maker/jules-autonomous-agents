@@ -99,3 +99,15 @@ at 80 characters reduces word count by ~31.7% (~792 to 541 words) while achievin
 **Action:** When optimizing infrastructure agent prompt definitions, standardize
 header hierarchies, wrap lines at 80 characters, and convert crammed single-line
 lists into structured bullet points.
+
+## 2026-09-06 - Client-Storage Agent Prompt Efficiency Optimization
+
+**Learning:** Client-storage agent prompts with non-standard heading levels
+(`###### Boundaries`), non-standard list marker spacing, and unwrapped long
+lines (like `archivist.md`) create markdownlint violations and waste prompt
+context window tokens. Converting unwrapped text blocks into 80-character
+wrapped Markdown, fixing heading levels (`## Boundaries`), and formatting
+bullet points reduces word count by ~35.5% (~832 to 537 words) while maintaining
+100% of safety boundaries, error handling, and prompt injection safeguards.
+**Action:** Standardize heading hierarchies and wrap lines at 80 characters when
+refactoring client-storage prompt files.
