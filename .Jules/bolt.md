@@ -99,3 +99,15 @@ at 80 characters reduces word count by ~31.7% (~792 to 541 words) while achievin
 **Action:** When optimizing infrastructure agent prompt definitions, standardize
 header hierarchies, wrap lines at 80 characters, and convert crammed single-line
 lists into structured bullet points.
+
+## 2026-09-06 - Optimizing Test Fixture Agent Prompt Density
+
+**Learning:** Test agent prompt definitions with non-standard heading levels
+(`#### Boundaries`) and jammed single-line list blocks (like `alchemist.md`)
+introduce markdownlint errors and unnecessary context window token usage.
+Adding a top-level H1 header, standardizing heading hierarchies, converting
+inline lists to structured bullet points, and wrapping lines at 80 characters
+reduces word count by ~39% (~708 to 432 words) while achieving 100%
+markdownlint compliance and retaining all safety and operational directives.
+**Action:** When tuning test fixture agent prompts, standardize heading levels,
+convert crammed inline lists into bullet points, and wrap text at 80 characters.
