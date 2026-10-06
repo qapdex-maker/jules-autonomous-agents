@@ -111,3 +111,15 @@ reduces word count by ~39% (~708 to 432 words) while achieving 100%
 markdownlint compliance and retaining all safety and operational directives.
 **Action:** When tuning test fixture agent prompts, standardize heading levels,
 convert crammed inline lists into bullet points, and wrap text at 80 characters.
+
+## 2026-09-07 - Client-Storage Hygiene Agent Prompt Token Efficiency
+
+**Learning:** Client-storage hygiene agent prompt definitions with non-standard
+heading levels (`###### Boundaries`), 3-space list marker indents, and loose
+unwrapped lines (like `archivist.md`) create markdownlint errors and consume
+excessive context window tokens. Correcting heading levels, standardizing list
+markers, wrapping text at 80 characters, and condensing word count reduces token
+overhead by ~44% (~832 to 467 words) while achieving 100% markdownlint
+compliance and preserving all security and operational rules.
+**Action:** When tuning storage hygiene agent prompts, standardize headings, wrap
+lines at 80 characters, and condense list blocks for maximum token efficiency.
