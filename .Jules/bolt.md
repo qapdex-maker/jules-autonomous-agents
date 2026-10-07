@@ -111,3 +111,17 @@ reduces word count by ~39% (~708 to 432 words) while achieving 100%
 markdownlint compliance and retaining all safety and operational directives.
 **Action:** When tuning test fixture agent prompts, standardize heading levels,
 convert crammed inline lists into bullet points, and wrap text at 80 characters.
+
+## 2026-09-07 - Storage Hygiene Agent Prompt Efficiency Optimization
+
+**Learning:** Client storage agent prompt definitions with non-standard heading
+levels (`###### Boundaries`), list marker spacing errors (e.g. 3 spaces after `*`),
+and unwrapped lines (like `archivist.md`) introduce markdownlint violations and
+context window overhead. Adding a top-level H1 header, standardizing heading
+hierarchies, converting list items to single-space bullet points, and wrapping
+lines at 80 characters reduces word count by ~45.9% (~832 to 450 words) while
+achieving 100% markdownlint compliance and preserving all safety boundaries and
+prompt injection protections.
+**Action:** When optimizing storage hygiene agent prompts, standardize heading
+levels, wrap text at 80 characters, and condense list items into high-density
+bullet points.
