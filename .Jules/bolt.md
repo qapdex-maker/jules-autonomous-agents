@@ -111,3 +111,17 @@ reduces word count by ~39% (~708 to 432 words) while achieving 100%
 markdownlint compliance and retaining all safety and operational directives.
 **Action:** When tuning test fixture agent prompts, standardize heading levels,
 convert crammed inline lists into bullet points, and wrap text at 80 characters.
+
+## 2026-09-07 - Documentation Agent Prompt Density Optimization
+
+**Learning:** Documentation agent prompt definitions with missing H1 headers
+(like `librarian.md`), skipped heading levels (`#### Boundaries`), jammed
+inline list items, and unwrapped lines up to 336 characters introduce
+markdownlint errors and waste context window tokens. Adding a top-level H1
+header, standardizing heading levels, converting single-line list blocks into
+bullet points, and wrapping lines at 80 characters reduces word count by ~43%
+(~789 to 450 words) while achieving 100% markdownlint compliance and retaining
+100% of safety, security, and operational directives.
+**Action:** When optimizing documentation agent prompt definitions, add missing
+H1 headers, fix heading hierarchies, wrap text at 80 characters, and convert
+jammed inline lists into bullet points.
