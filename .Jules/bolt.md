@@ -22,11 +22,11 @@ concise categorized bullet points and compact TypeScript examples.
 
 ## 2026-07-11 - Optimizing Academic Prompt Efficiency
 
-**Learning:** Academic writing agent prompts often contain redundant step-by-step
-summaries in process and delivery sections. Consolidating negative constraints and
-merging daily process steps into single high-density list items reduces token overhead
-by ~35% (~119 lines to ~105 lines, or ~772 words to ~490 words) while preserving
-all safety rules and behavioral expectations.
+**Learning:** Academic writing agent prompts often contain redundant
+step-by-step summaries in process and delivery sections. Consolidating negative
+constraints and merging daily process steps into single high-density list items
+reduces token overhead by ~35% (~119 lines to ~105 lines, or ~772 words to ~490
+words) while preserving all safety rules and behavioral expectations.
 **Action:** Streamline multi-step process lists and category items into compact,
 dense sentences when tuning prompt files.
 
@@ -47,8 +47,8 @@ loose formatting, excessive spacing, and verbose explanations.
 Refactoring into standardized 80-character line wrapped Markdown with concise
 bullet points and added security guidelines reduces word count by ~34%
 (~730 to 483 words) while maintaining full instructional coverage.
-**Action:** Streamline verbose routing agent descriptions and convert loose lists
-into compact bullet points.
+**Action:** Streamline verbose routing agent descriptions and convert loose
+lists into compact bullet points.
 
 ## 2026-09-02 - Condensing Cleaning Agent Daily Process Prompts
 
@@ -94,8 +94,9 @@ headings (`###### Boundaries`), non-standard list marker spacing (e.g. 3 spaces
 after `*`), and loose single-line inline lists (like `conductor.md`) introduce
 markdownlint violations and context window overhead. Converting inline list
 blocks into standard bullet points, correcting heading levels, and wrapping text
-at 80 characters reduces word count by ~31.7% (~792 to 541 words) while achieving
-100% markdownlint compliance and preserving all safety boundaries and security rules.
+at 80 characters reduces word count by ~31.7% (~792 to 541 words) while
+achieving 100% markdownlint compliance and preserving all safety boundaries
+and security rules.
 **Action:** When optimizing infrastructure agent prompt definitions, standardize
 header hierarchies, wrap lines at 80 characters, and convert crammed single-line
 lists into structured bullet points.
@@ -111,3 +112,16 @@ reduces word count by ~39% (~708 to 432 words) while achieving 100%
 markdownlint compliance and retaining all safety and operational directives.
 **Action:** When tuning test fixture agent prompts, standardize heading levels,
 convert crammed inline lists into bullet points, and wrap text at 80 characters.
+
+## 2026-10-10 - Documentation Agent Prompt Optimization
+
+**Learning:** Documentation agent prompt definitions with non-standard heading
+levels (`#### Boundaries`) and jammed single-line list blocks (like
+`librarian.md`) introduce markdownlint errors and waste context window tokens.
+Standardizing heading hierarchies, converting inline lists to structured bullet
+points, wrapping lines at 80 characters, and condensing process steps reduces
+word count by ~25% (~789 to 590 words) while achieving 100% markdownlint
+compliance and preserving all safety boundaries and operational directives.
+**Action:** When tuning documentation agent prompts, standardize heading
+hierarchies, wrap lines at 80 characters, and condense process steps into
+structured bullet points.
