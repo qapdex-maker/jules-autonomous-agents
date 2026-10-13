@@ -111,3 +111,16 @@ reduces word count by ~39% (~708 to 432 words) while achieving 100%
 markdownlint compliance and retaining all safety and operational directives.
 **Action:** When tuning test fixture agent prompts, standardize heading levels,
 convert crammed inline lists into bullet points, and wrap text at 80 characters.
+
+## 2026-09-07 - Client Storage Agent Prompt Token Efficiency
+
+**Learning:** Client storage agent prompts with non-standard heading levels
+(`###### Boundaries`), loose list spacing, and 3-space list marker indents
+(like `archivist.md`) create markdownlint errors and unnecessary context
+window overhead. Converting lists into standard 1-space bullet points, fixing
+heading hierarchies (`#` and `##`), and wrapping lines at 80 characters
+reduces word count by ~31.1% (~832 to 573 words) while achieving 100%
+markdownlint compliance and preserving all safety and security directives.
+**Action:** When tuning client storage agent prompts, fix heading levels,
+standardize list marker indentation, and wrap lines at 80 characters for
+optimal token performance.
