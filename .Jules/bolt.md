@@ -111,3 +111,16 @@ reduces word count by ~39% (~708 to 432 words) while achieving 100%
 markdownlint compliance and retaining all safety and operational directives.
 **Action:** When tuning test fixture agent prompts, standardize heading levels,
 convert crammed inline lists into bullet points, and wrap text at 80 characters.
+
+## 2026-09-07 - Client Storage Agent Prompt Token Optimization
+
+**Learning:** Storage wrapper prompt definitions with non-standard heading levels
+(`###### Boundaries`) and unwrapped long lines (like `archivist.md`) introduce
+markdownlint errors and context window token bloat. Adding a top-level H1
+header, fixing header hierarchy, converting inline lists into bullet points, and
+wrapping lines at 80 characters reduces word count by ~47.8% (~832 to 434 words)
+while achieving 100% markdownlint compliance and preserving all security
+guidelines and operational boundaries.
+**Action:** When optimizing browser storage prompt files, standardize header
+hierarchies, convert crammed inline lists to bullet points, and wrap lines at 80
+characters.
